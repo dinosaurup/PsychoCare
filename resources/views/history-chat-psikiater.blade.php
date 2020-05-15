@@ -9,19 +9,31 @@
         height: 200px;
         border: 1px solid grey;
         margin: auto;
+        padding: 4px;
+    }
+    .navbar{
+        background-color: #4e555b;
+        height: 100px;
     }
 </style>
 <body>
+<nav id="navbar" class="navbar mb-4">
+    <center>
+        <h3 style="color: white;">
+            History
+        </h3>
+    </center>
+</nav>
 @foreach($response as $r)
-    <div class="container">
+    <div class="container mb-3">
         <a href="/chat/user/{{$r['user']->id}}" class="d-flex justify-content-between">
-            <div class="col-md-4">
+            <div class="col-md-4" style="margin-top: 3px">
                 <img src="{{url($r['user']->foto)}}" alt="avatar"
                      class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1"
                      style="width: 100px; height: 100px">
             </div>
-            <div class="col-md-8">
-                <strong>{{$r['user']->nama}}</strong>
+            <div class="col-md-8" style="margin-top: 3px">
+                <h4>{{$r['user']->nama}}</h4>
             </div>
         </a>
     </div>

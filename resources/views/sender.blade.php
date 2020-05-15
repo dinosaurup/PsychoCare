@@ -166,7 +166,6 @@
                                 @csrf
                                 <input type="hidden" name="user_id" id="user_id" value="{{$id}}">
                                 <input type="hidden" name="room_id" id="room_id" value="{{$room->id}}">
-                                <input type="hidden" name="pesan_id" id="pesan_id" value="{{$p->id}}">
                                 <textarea class="form-control pl-2 my-0" name="chat" id="chat" rows="3"
                                           placeholder="Type your message here..."></textarea>
                             </div>
