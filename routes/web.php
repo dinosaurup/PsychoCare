@@ -38,6 +38,9 @@ Route::get('/edit/profil/psikiater', 'PsikiaterController@formEdit');
 Route::get('/history/chat', 'PsikiaterController@viewHistoryChat');
 Route::get('/chat/user/{id}', 'MessageController@historyChat');
 
+Route::get('/chat', function (){
+    return view('psikiater_profil');
+});
 //Pasien
 Route::get('/pasien', 'PasienController@index');
 Route::get('/pasien/cariPsikiater', 'PasienController@cariPsikiater');
@@ -61,11 +64,6 @@ Route::get('/edit/profil/admin', 'AdminController@formEdit');
 
 Route::get('/signout', 'PsikiaterController@signOut');
 Route::get('/sign-out', 'PasienController@signOut');
-
-Route::get('/chat', function () {
-    broadcast(new WebsocketDemoEvent('some_data'));
-    return view('chat');
-})->middleware(\App\Http\Middleware\Cors::class);
 
 Route::get('/psikiater/chat/{id}', 'ChatController@index');
 Route::get('/messages', 'ChatController@fetchMessages');

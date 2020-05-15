@@ -36,7 +36,7 @@ class PsikiaterController extends Controller
 
     public function profil(Request $request){
         $id = $request->session()->get('s_id');
-        $data['psikiater'] = User::where('id', $id)->get();
+        $data['psikiater'] = User::where('id', $id)->first();
         $data['title'] = "PROFIL";
         return view('profil_psikiater', $data);
     }
