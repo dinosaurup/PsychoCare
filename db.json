@@ -1,0 +1,39 @@
+{
+  "psikiater" : [
+    {
+      "nama" : "Robin B. Smith",
+      "profesi" : "Psychiatrist",
+      "image" : "public/assets/photo/psikiater/1.png"
+    },
+    {
+      "nama" : "Sa'ib Shakib Shalhoub",
+      "profesi" : "Psychiatrist",
+      "image" : "public/assets/photo/psikiater/2.png"
+    },
+    {
+      "nama" : "James L. Vaden",
+      "profesi" : "Psychiatrist",
+      "image" : "public/assets/photo/psikiater/3.png"
+    },
+    {
+      "nama" : "David J. Rose",
+      "profesi" : "Psychiatrist",
+      "image" : "public/assets/photo/psikiater/4.png"
+    },
+    {
+      "nama" : "Anis Sahl Maroun",
+      "profesi" : "Psychiatrist",
+      "image" : "public/assets/photo/psikiater/5.png"
+    },
+    {
+      "nama" : "Mason Tucker",
+      "profesi" : "Psychiatrist",
+      "image" : "public/assets/photo/psikiater/6.png"
+    },
+    {
+      "nama" : "Alexander Alden",
+      "profesi" : "Psychiatrist",
+      "image" : "public/assets/photo/psikiater/7.png"
+    }
+  ]
+}
