@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <style>
+        #navbar {
+            height: 100px;
+            background-color: #4e555b;
+        }
+    </style>
 </head>
 <body>
+<nav id="navbar" class="navbar mb-4">
+    <h3 style="color: white">
+        EDIT PROFIL
+    </h3>
+</nav>
 <div class="mx-auto" style="width: 500px;">
 
     <form action="/profil/{{$psikiater->id}}/psikiater/update" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
-        <h2><center>EDIT PROFIL</center></h2>
 
         <div class="form-group">
             <input type="hidden" name="id" class="form-control" value="{{$psikiater->id}}" >

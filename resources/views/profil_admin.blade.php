@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <style>
         .bungkus1 {
-            width: 1000px;
-            height: 500px;
+            width: 700px;
+            height: 600px;
             background-color: #95999c;
-            margin-left: 70px;
-            margin-right: 70px;
+            margin-left: 160px;
+            margin-right: 160px;
         }
 
         .col-6 a {
@@ -23,8 +23,11 @@
             background-color: orange;
             border-radius: 12px;
             margin-top: 10px;
-            margin-left: 400px;
+            margin-left: 250px;
 
+        }
+        #identitas{
+            margin-top: 100px;
         }
     </style>
 </head>
@@ -64,21 +67,35 @@
         <div class="container">
             <div class="bungkus1" style="background-color: #95999c">
                 <div class="row">
+
                     <div class="col-5">
                         <img src="{{url($admin->foto)}}"
                              alt="avatar"
                              class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1"
-                             style="width:300px; height: 300px; margin-top:100px; margin-left:40px">
-                        <center><h3><b>{{$admin->nama}}</b></h3></center>
+                             style="width:250px; height: 250px; margin-top:100px; margin-left:15px">
                     </div>
                     <div class="col-6" style="background-color: #b9bbbe; height: 500px; right: 0">
                         <a class="btn btn-warning" href="/edit/profil/admin">Edit Profil</a>
 
-                        <div style="margin-top: 150px">
-                            <li class="fa fa-user-circle mr-4"></li><strong style="color: black;">{{$admin->username}}</strong><br>
-                            <li class="fa fa-envelope mr-4"></li><strong style="color: black;">{{$admin->email}}</strong><br>
-                            <li class="fa fa-address-book mr-4"></li><strong style="color: black;">{{$admin->telepon}}</strong>
-                        </div>
+                        <table id="identitas">
+                            <tr>
+                                <th><li class="fa fa-user-circle mr-4"><label style="font-size: medium"> Fullname</label></li></th>
+                                <td> <h5> {{$admin->nama}} </h5></td>
+                            </tr>
+                            <tr>
+                                <th><li class="fa fa-user-circle mr-4"><label style="font-size: medium">Username</label></li></th>
+                                <td> <h5>{{$admin->username}}</h5></td>
+                            </tr>
+                            <tr>
+                                <th><li class="fa fa-envelope mr-4"><label style="font-size: medium">Email</label></li></th>
+                                <td><h5>{{$admin->email}}</h5></td>
+                            </tr>
+                            <tr>
+                                <th> <li class="fa fa-address-book mr-4"><label style="font-size: medium"> Phone</label></li></th>
+                                <td><h5>{{$admin->telepon}}</h5></td>
+                            </tr>
+                        </table>
+
                     </div>
                 </div>
             </div>

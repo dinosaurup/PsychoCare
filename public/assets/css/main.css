@@ -6,38 +6,38 @@
 [ FONT ]*/
 
 @font-face {
-    font-family: Poppins-Regular;
-    src: url('../fonts/poppins/Poppins-Regular.ttf');
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
 }
 
 @font-face {
-    font-family: Poppins-Bold;
-    src: url('../fonts/poppins/Poppins-Bold.ttf');
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
 }
 
 @font-face {
-    font-family: Poppins-Medium;
-    src: url('../fonts/poppins/Poppins-Medium.ttf');
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
 }
 
 @font-face {
-    font-family: Raleway-Regular;
-    src: url('../fonts/raleway/Raleway-Regular.ttf');
+  font-family: Raleway-Regular;
+  src: url('../fonts/raleway/Raleway-Regular.ttf'); 
 }
 
 @font-face {
-    font-family: Raleway-Black;
-    src: url('../fonts/raleway/Raleway-Black.ttf');
+  font-family: Raleway-Black;
+  src: url('../fonts/raleway/Raleway-Black.ttf'); 
 }
 
 @font-face {
-    font-family: Raleway-SemiBold;
-    src: url('../fonts/raleway/Raleway-SemiBold.ttf');
+  font-family: Raleway-SemiBold;
+  src: url('../fonts/raleway/Raleway-SemiBold.ttf'); 
 }
 
 @font-face {
-    font-family: Raleway-Bold;
-    src: url('../fonts/raleway/Raleway-Bold.ttf');
+  font-family: Raleway-Bold;
+  src: url('../fonts/raleway/Raleway-Bold.ttf'); 
 }
 
 
@@ -45,9 +45,9 @@
 [ RESTYLE TAG ]*/
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
 }
 
 body, html {
@@ -174,17 +174,17 @@ iframe {
 }
 
 .container-login100 {
-    width: 100%;
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
   background: #0250c5;
   background: -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
   background: -o-linear-gradient(bottom, #0250c5, #d43f8d);
@@ -232,16 +232,15 @@ iframe {
 }
 
 .login100-form-title {
-    font-family: Raleway-Black;
-    font-size: 25px;
-    color: #333333;
-    line-height: 1.2;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 5px;
+  font-family: Raleway-Black;
+  font-size: 30px;
+  color: #333333;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
 
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 
