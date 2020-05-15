@@ -60,7 +60,7 @@ class AdminController extends Controller
 
     public function profil(Request $request){
         $id = $request->session()->get('s_id');
-        $data['admin'] = User::where('id', $id)->get();
+        $data['admin'] = User::where('id', $id)->first();
         $data['title'] = "PROFIL";
         return view('profil_admin', $data);
     }

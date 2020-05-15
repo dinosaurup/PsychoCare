@@ -19,7 +19,6 @@
         </div>
         <!-- <div class="img bg-wrap text-center py-4" style="background-image: url(images/bg_1.jpg);"> -->
         <div class="img bg-wrap text-center py-4">
-            <i class="fa fa-bell" aria-hidden="true"></i>
             <div class="user-logo">
                 <img src="{{$foto}}" style="width: 50%">
                 <h3>{{$user->username}}</h3>
@@ -36,7 +35,7 @@
                 <a href="/history/chat"><span class="fa fa-history mr-3"></span>History</a>
             </li>
             <li>
-                <a href="/pasien/profil"><span class="fa fa-cog mr-3"></span> Settings</a>
+                <a href="/pasien/profil"><span class="fa fa-user-circle mr-3"></span> Profil</a>
             </li>
             <li>
                 <a href="{{url('/signout')}}"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>

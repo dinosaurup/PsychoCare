@@ -41,7 +41,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 ">
-                            
+
                         </div>
                         <div class="col-xl-6 col-md-6">
                             <div class="short_contact_list">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-7">
-                            
+
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="Appointment">
@@ -325,7 +325,7 @@
                                 <p>
                                 Akan ada orang-orang baik di sekitarmu, jiwa baik yang ingin membantu. Bahkan ketika tampaknya mustahil untuk membuka mulut kita untuk mengeluarkan kesedihan dan keputusasaan.
                                 </p>
-    
+
                             </div>
                         </div>
                         <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
@@ -340,7 +340,7 @@
                                     <li><a href="#">Medicine</a></li>
                                     <li><a href="#">Dental</a></li>
                                 </ul>
-    
+
                             </div> -->
                         </div>
                         <div class="col-xl-2 col-md-6 col-lg-2">

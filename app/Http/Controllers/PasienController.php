@@ -31,13 +31,15 @@ class PasienController extends Controller
         return view('pasien_index', $data, ['foto'=>$foto]);
     }
 
-    public function cariPsikiater()
+    public function cariPsikiater(Request $request)
     {
-        $user = User::join('psikiater', 'user.id', '=', 'user_id')
+        $id = $request->session()->get('s_id');
+        $data['nama']= User::where('id', $id)->first();
+        $data['user'] = User::join('psikiater', 'user.id', '=', 'user_id')
             ->select('user.id','nama', 'email', 'tarif', 'foto')
             ->where('role_id', 3)
             ->get();
-        return view('cari_psikiater', ['user' => $user]);
+        return view('cari_psikiater', $data);
     }
 
     public function search(Request $request)
@@ -52,13 +54,6 @@ class PasienController extends Controller
 //        });
 //
 //        return $user;
-    }
-
-    public function profil(Request $request){
-        $id = $request->session()->get('s_id');
-        $data['pasien'] = User::where('id', $id)->get();
-        $data['title'] = "PROFIL";
-        return view('profil', $data);
     }
 
     public function formEdit(Request $request){
@@ -86,7 +81,7 @@ class PasienController extends Controller
 
     public function pasienProfil(Request $request){
         $id = $request->session()->get('s_id');
-        $data['pasien'] = User::where('id', $id)->get();
+        $data['pasien'] = User::where('id', $id)->first();
         $data['title'] = "PROFIL";
         return view('profil', $data);
     }

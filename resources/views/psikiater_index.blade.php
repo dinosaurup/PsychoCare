@@ -19,7 +19,7 @@
           </div>
           <!-- <div class="img bg-wrap text-center py-4" style="background-image: url(images/bg_1.jpg);"> -->
           <div class="img bg-wrap text-center py-4">
-              <i class="fa fa-bell" aria-hidden="true"></i>
+{{--              <i class="fa fa-bell" aria-hidden="true"></i>--}}
               <div class="user-logo">
                   @foreach($gambar as $g)
                       <img src="{{url($g->foto)}}" style="width: 50%">
@@ -37,7 +37,7 @@
                   <a href="/history/chat"><span class="fa fa-history mr-3"></span>History</a>
               </li>
               <li>
-                  <a href="/psikiater/profil"><span class="fa fa-cog mr-3"></span> Settings</a>
+                  <a href="/psikiater/profil"><span class="fa fa-user-circle mr-3"></span> Profile</a>
               </li>
               <li>
                   <a href="{{url('/signout')}}"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>

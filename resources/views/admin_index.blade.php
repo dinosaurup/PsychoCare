@@ -37,7 +37,7 @@
                 <a href="/admin/add-psikeater"><span class="fa fa-user-plus mr-3"></span> Add Psikiater</a>
             </li>
             <li>
-                <a href="/admin/profil"><span class="fa fa-cog mr-3"></span> Settings</a>
+                <a href="/admin/profil"><span class="fa fa-user-circle mr-3"></span> Profile </a>
             </li>
             <li>
                 <a href="{{url('/sign-out')}}"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>
